@@ -1,0 +1,6 @@
+<Action>
+<div style="margin-top:3px;">
+	<div style="color:gray">{$info.details.date} (<em>{$info.details.date|MySQLTimeDiff}</em>)</div>
+	<div style="margin-left:5px;">{t 1=$info.userInfo.name|forHTML 2=$info.details.details.from_relative_path|nicerRelativePath|forHTML 3=$info.details.details.to_relative_path|nicerRelativePath|forHTML}User "<strong>%1</strong>" moved the file "%2" to "%3".{/t}</div>
+</div>
+</Action>
