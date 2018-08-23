@@ -1,6 +1,0 @@
-<Action>
-<div style="margin-top:3px;">
-	<div style="color:gray">{$info.details.date} (<em>{$info.details.date|MySQLTimeDiff}</em>)</div>
-	<div style="margin-left:5px;">{t 1=$info.userInfo.name|forHTML 2=$info.details.details.relative_path|nicerRelativePath|forHTML}User "<strong>%1</strong>" no longer shares the file "%2" with{/t} {if $info.details.details.share_info.with_uid}{t 1=$info.details.details.share_info.with_uid|uid2Name}user <strong>%1{/t}</strong>{else}{t 1=$info.details.details.share_info.with_gid|gid2Name}group <strong>%1</strong>{/t}{/if}.</div>
-</div>
-</Action>
